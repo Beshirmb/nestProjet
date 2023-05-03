@@ -9,7 +9,7 @@ export const signIn = (data,config) =>
   axios.post(process.env.REACT_APP_baseurl + "users/auth/login", data, config);
 
 export const updatepassword = (data) =>
-  axios.patch(
+  axios.put(
     process.env.REACT_APP_baseurl + `users/changepassword/${data.id}`,
     { password: data.password }
   );

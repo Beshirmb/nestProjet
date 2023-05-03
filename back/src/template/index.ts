@@ -14,7 +14,7 @@ export const send_insecription_email = (organisation, id, url) => {
     "<a href='" + url + "password/" + id + "' style='text-decoration: none;'>  <button style='display:block;border: none;outline:none;background: none;padding:10px; background-color:#1890ff;color:white;border-radius:10px; margin:auto'><strong>J'acceder a mon compte !</strong></button>  </a>";
   Body += "<p>ou copier coller le lien au navigateur : " + url + "password/" + id + "</p>";
   Body +=
-    "<p> Notre service clients est disponible pour toutes questions sur  <span style='text-decoration: underline;color:blue'>  contact@test.com</span> </p>";
+    "<p> Notre service clients est disponible pour toutes questions sur  <span style='text-decoration: underline;color:blue'>contact@test.com</span> </p>";
   Body += '<p>Bonne journée</p>  </div></div>';
   Body += '</html>';
   return Body;

@@ -17,6 +17,15 @@ import { HashPassowrdProviderService } from './hashPasswordProvider.service';
 import { MailerService } from '@nestjs-modules/mailer';
 import { configuration } from '../../../config/configuration'
 
+
+const inMemoryStorage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, './public')
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname)
+  }
+})
 @Injectable()
 export class UserService {
   constructor(
@@ -25,8 +34,9 @@ export class UserService {
 
     private hashPasswordProviderService: HashPassowrdProviderService,
   ) { }
-  upload = multer({
 
+  upload = multer({
+    storage: inMemoryStorage,
   }).single('file')
 
   public async create_first_user(data: addorganisationDto, organisation) {
@@ -47,7 +57,7 @@ export class UserService {
     else {
       const adminuser = await createadmin.save();
       if (adminuser) {
-        /*
+
         const sendmail = await this.sendMailtoUser(
           adminuser.email,
           organisation.name,
@@ -56,7 +66,7 @@ export class UserService {
           'template',
           configuration.LINK_Font,
         );
-        */
+
         return {
           success: true, message: {
             fr:

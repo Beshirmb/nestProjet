@@ -53,13 +53,10 @@ import { getgid } from 'process';
 
     MailerModule.forRoot({
       transport: {
-        service: "gmail",
-        host: "smtp.gmail.com",
-        port: 587,
-        secure: false,
-        tls: {
-          rejectUnauthorized: false
-        },
+        host: "autofest.tn",
+        port: 465,
+        secure: true, // true for 465, false for other ports
+
         auth: {
           user: configuration.EMAIL_ID,
           pass: configuration.EMAIL_PASS,

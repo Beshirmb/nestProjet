@@ -1,9 +1,10 @@
-export let produittab = [{
+export let categorytab = [{
     codes: 43,
     color: '#07a6f6  ',
     nameProduit: "crèmes",
     Stock: "10"
 }
+
     , {
     codes: 60,
     color: '#ee4e88',

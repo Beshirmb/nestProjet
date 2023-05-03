@@ -50,7 +50,7 @@ const Identification = ({ history }) => {
   });
 
   useEffect(() => {
-    dispatch({type : CLEAR_TOAST})
+    dispatch({ type: CLEAR_TOAST })
     if (message && message.success) history.push("/welcome");
     else if (message && message.success === false)
       toast.error(t("BACK-END-ERROR.EMAIL-EXSIST"));
@@ -67,14 +67,14 @@ const Identification = ({ history }) => {
       email: data.email,
       isadmin: true,
     };
-    
+
 
     dispatch(registerU(dataAPI));
   };
 
   return (
     <>
-      <div className="header-connexion-wrapper">
+      <div className="header-connexion-wrapper" style={{ marginTop: "40px" }}>
         <span className="header-connexion">
           {t("IDENTIFICATION.VOUS-AVEZ-DEJA-UN-COMPTE")}{" "}
         </span>
@@ -130,9 +130,8 @@ const Identification = ({ history }) => {
             name="organisation"
             type="text"
             placeholder={t("IDENTIFICATION.LABEL-ORAGANISATION")}
-            className={`form-control ${
-              errors.organisation ? "is-invalid" : ""
-            }`}
+            className={`form-control ${errors.organisation ? "is-invalid" : ""
+              }`}
           />
           <div className="invalid-feedback">
             {<Icon />}

@@ -45,6 +45,3 @@ $ npm run test:cov
 ## Stay in touch
 
 - Author - BeshirMbarki
-
-
-
