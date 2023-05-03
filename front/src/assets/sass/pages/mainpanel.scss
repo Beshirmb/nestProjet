@@ -1,0 +1,29 @@
+.main-panel{
+   height: calc(100vh - 122px);
+   background-color: white;
+   margin:10px
+   
+ }
+
+.taillegloble{
+   width: 100%;
+}
+ @media(max-width : 800px){
+    .taillegloble{
+      width:calc(100% - 285px);
+    }
+.main-panel{
+ position: relative;
+ left: 285px;
+}
+ }
+
+ @media(max-width : 576px){
+    .main-panel{
+     position:static;
+   //   height:100%
+    }
+    .taillegloble{
+      width: 100%;
+   }
+ }

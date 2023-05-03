@@ -1,0 +1,108 @@
+//gray color
+$gray-dark: #586273 !default;
+$gray-dark-primary: #8692a6 !default;
+$gray: #acb3bd !default;
+$gray-light: #b7bccb !default;
+$gray-light-primary: #c4c4c4 !default;
+
+$gray2: #b7bccb !default;
+$gray3: #acb3bd !default;
+$gray4: #979797 !default;
+$gray5: #8692a6 !default;
+$gray6: #c5c5c5 !default;
+
+//white color
+$white: #ffffff !default;
+$white-primary: #fafafc !default;
+$white-secondary: #e5e5e5 !default;
+$white2: #f1f4fa !default;
+$white3: rgb(243, 243, 243) !default;
+$white4: #f2f2f2 !default;
+$white5: #f1f1f1 !default;
+
+//blue color
+$blue5: rgba(204, 188, 252, 0.15) !default;
+$white4: #f2f2f2 !default;
+//blue color
+
+$blue4: rgba(0, 0, 0, 0.7) !default;
+$blue3: rgba(24, 94, 164, 0.11) !default;
+$blue-dark-secondary: #202d59 !default;
+$blue-dark: #182241 !default;
+$blue-dark-primary: #212529 !default;
+$blue-t: #072441 !default;
+
+$blue-dark-primary: #212529 !default;
+$blue-t: #072441 !default;
+$blue-light: #c0f0ff !default;
+$red: #eb5757 !default;
+$red-primary: #f9dede !default;
+$red-secondray: rgba(235, 87, 87, 0.1) !default;
+
+$blue: #2f80ed !default;
+$green: #27ae60 !default;
+$orange: #f2994a !default;
+$yellow: #ffe597 !default;
+
+$primary: $blue !default;
+
+$theme-colors: (
+  "primary": $primary,
+) !default;
+
+//Fonts
+$montserrat: "Montserrat" !default;
+$poppins: "Poppins" !default;
+$cairo: "Cairo" !default;
+$openSans: "Open Sans" !default;
+$nunito: "Nunito" !default;
+$font-family-sans-serif: $montserrat, $cairo, system-ui, -apple-system,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+
+// variables button
+$btn-font-size: 10px !default;
+$btn-font-size-lg: 18px !default;
+
+$btn-font-weight: 600 !default;
+$btn-font-weight-lg: 600 !default;
+
+$btn-border-radius: 4px !default;
+$btn-border-radius-lg: 5px !default;
+
+$btn-line-height: 17px !default;
+$btn-line-height-lg: 64px !default;
+
+$btn-padding-y: 0 !default;
+$btn-padding-x: 0 !default;
+
+$btn-padding-y-lg: 0 !default;
+$btn-padding-x-lg: 0 !default;
+
+//variable input
+
+$label-margin-bottom: 0.5rem !default;
+
+$input-font-size: 16px !default;
+$input-font-weight: 600 !default;
+
+$input-font-size-lg: 16px;
+
+$input-bg: $white !default;
+
+$input-color: $blue-dark-secondary !default;
+$input-border-color: $gray !default;
+$input-border-width: 2px !default;
+
+$input-border-radius: 5px !default;
+$input-border-radius-lg: 5px !default;
+
+$input-placeholder-color: $gray !default;
+
+$input-btn-padding-y-lg: 0.5rem !default;
+$input-btn-padding-x-lg: 1rem !default;
+$input-btn-padding-y: 1rem !default;
+$input-btn-padding-x: 1.75rem !default;
+
+$body-color: $blue-dark-secondary !default;

@@ -1,0 +1,57 @@
+{
+  "APP-TITLE": "REACT nest Projet",
+  "IDENTIFICATION": {
+    "VOUS-AVEZ-DEJA-UN-COMPTE": "Vous avez déja un compte",
+    "SE-CONNECTER": "se connecter",
+    "M-IDENTIFICATION": "Identification",
+    "SUB-TITLE": "Entrer votre email d'identification",
+    "LABEL-EMAIL": "Email",
+    "LABEL-ORAGANISATION": "Organisation",
+    "LABEL-NUM-TELE": "Numéro de téléphone",
+    "BUTTON-S-INSCRIRE": "S'inscrire",
+    "REQUIRED": {
+      "TOAST": "vérifier vos champs !",
+      "TOAST-EMAIL": "Vérifier votre boite mail!",
+      "EMAIL": "Entrez votre email",
+      "EMAIL-IS-INVALID": "Le courriel est invalide",
+      "ORGANISATION": "Entrez votre nom d'organisation",
+      "NUM-TELE": "Entrez votre numéro de téléphone",
+      "NUM-TELE-IS-INVALID": "Le numéro de téléphone n'est pas valide",
+      "NUM-TELE-LENGHT": "Doit être exactement 8 chiffres",
+      "PASSWORD-LENGHT-MIN": "Mot de passe doit contenir 6 caractères au minimum",
+      "PASSWORD-LENGHT-MAX": "Mot de passe doit contenir 20 caractères au maximum"
+    }
+  },
+  "WELCOME": {
+    "M-BIENVENUE": "Bienvenue",
+    "MESSAGE-EMAIL-ACTIVATION": "Un <b> e-mail d'activation </b> vous est envoyé à l'adresse e-mail que vous avez indiquée"
+  },
+  "PASSWORD": {
+    "N-MOT-PASSE": "Nouveau Mot De Passe",
+    "ENTRER-MOT-DE-PASSE": "Entrer un Nouveau mot de passe",
+    "MATCH-PASSWORD": "les mots de passe doivent correspondre",
+    "LABEL-CONFIRAMATION": "Confirmation",
+    "BUTTON-ENREGISTRER": "Enregistrer"
+  },
+  "CONNEXION": {
+    "VOUS-N-PAS-COMPTE": "Vous n'avez pas encore de compte",
+    "S-INSCRIRE": "S'inscrire",
+    "CONNECION": "Connexion",
+    "SUB-TITLE": "Entrer votre email d'identification",
+    "LABEL-EMAIL": "Email",
+    "LABEL-MOT-DE-PASSE": "Mot De Passe",
+    "BUTTON-SE-CONNECTER": "Se connecter",
+    "INSCRIT-SUCCES": "Félicitations vous été inscrit",
+    "URL-NON-VALIDE": "URL non valide",
+    "INSCRIT-FAILED": "Aucun utilisateur trouvé",
+    "REQUIRED": {
+      "EMAIL": "Entrez votre email",
+      "MOT-DE-PASSE": "Entrez votre mot de passe"
+    }
+  },
+  "BACK-END-ERROR": {
+    "EMAIL-EXSIST": "L'adresse e-mail existe déjà",
+    "PASSWORD-INCORECT": "Le Mot de passe est incorrect",
+    "EMAIL-INCORECT": "L'adresse e-mail est incorrecte"
+  }
+}

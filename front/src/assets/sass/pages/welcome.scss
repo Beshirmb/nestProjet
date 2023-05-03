@@ -1,0 +1,45 @@
+@import "../base/variables";
+@import "../base/fonts";
+
+
+
+.custom-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 47px;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+
+
+
+.icon-welcome {
+  width: 70px;
+  height: 70px;
+  color: $primary;
+ 
+}
+
+.title-welcome {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: $blue-dark;
+}
+
+.sub-title-welcome {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: $blue-dark;
+}
+
+.sub-title-welcome-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $blue-dark;
+ 
+}
+}

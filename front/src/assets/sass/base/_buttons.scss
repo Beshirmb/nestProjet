@@ -1,0 +1,60 @@
+@import "../base/variables";
+@import "../base/fonts";
+
+.custom-btn-cancel {
+  width: 109px;
+  height: 50px;
+  border: 1px solid $gray3;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $gray-dark-primary;
+}
+
+.custom-btn-save {
+  width: 153px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $white2;
+}
+
+.icon-arrow {
+  color: $gray-dark-primary;
+  width: 30px;
+  height: 30px;
+}
+
+.add-client {
+  width: 170px;
+  height: 40px;
+  background: $blue;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $white3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .icon-plus-client {
+    width: 20px;
+    height: 20px;
+    color: $white3;
+    margin: 0 5px;
+  }
+}
+
+.plus-primary {
+  margin: 36%;
+}

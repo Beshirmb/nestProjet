@@ -1,0 +1,51 @@
+:root {
+  --scroll-bar-color: #4a92f0;
+  --scroll-bar-bg-color: #d9dcdf50;
+}
+
+@import "./assets/sass/base/fonts";
+@import "./assets/sass/base/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "./assets/sass/pages/footer.scss";
+@import "./assets/sass/base/inputs";
+@import "../src/assets/sass/pages/navBar";
+@import "../src/assets/sass/pages/mainpanel.scss";
+@import "./assets/sass/base/_global";
+@import "../src/assets/sass/pages/sidebar.scss";
+@import '../src/assets/sass/pages/navBar';
+@import '../src/assets/sass/pages/mainpanel.scss';
+
+
+
+.bagroundadmin {
+  background: #f1f4fa;
+}
+
+.m-0-5 {
+  margin: 0.75rem;
+}
+
+.general-backdrop {
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0px;
+  z-index: 1010;
+  left: 280px;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .m-0-5 {
+    margin: 0.15rem;
+  }
+}
+
+.pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item .pro-inner-item:before {
+  box-shadow: none !important;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.5);
+}

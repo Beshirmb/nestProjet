@@ -1,0 +1,58 @@
+{
+  "APP-TITLE": "REACT nest Projet-arabe",
+  "IDENTIFICATION": {
+    "VOUS-AVEZ-DEJA-UN-COMPTE": "هل لديك حساب ؟",
+    "SE-CONNECTER": "يتصل",
+    "M-IDENTIFICATION": "تعريف",
+    "SUB-TITLE": "أدخل البريد الإلكتروني للتعريف الخاص بك",
+    "LABEL-EMAIL": "البريد الإلكتروني",
+    "LABEL-ORAGANISATION": "المنظمة",
+    "LABEL-NUM-TELE": "رقم الهاتف",
+    "BUTTON-S-INSCRIRE": "سجل الان",
+    "REQUIRED": {
+      "TOAST": "! تحقق من الحقول الخاصة بك",
+      "TOAST-EMAIL": "تحقق من صندوق البريد الخاص بك",
+      "EMAIL": "أدخل بريدك الإلكتروني",
+      "EMAIL-IS-INVALID": "البريد الإلكتروني غير صالح",
+      "ORGANISATION": "أدخل اسم مؤسستك",
+      "NUM-TELE": "أدخل رقم هاتفك",
+      "NUM-TELE-IS-INVALID": "رقم الهاتف غير صالح",
+      "NUM-TELE-LENGHT": "يجب أن يتكون من 8 أرقام بالضبط",
+      "PASSWORD-LENGHT-MIN": "يجب أن يكون الحد الأدنى 6 أحرف",
+      "PASSWORD-LENGHT-MAX": "يجب أن يكون 20 حرفًا كحد أقصى",
+      "MATRICULE-FISCALE": "أدخل رقمك الضريبي"
+    }
+  },
+  "WELCOME": {
+    "M-BIENVENUE": "مرحبا",
+    "ENVOI-MAIL-ACTIVATION": "",
+    "MESSAGE-EMAIL-ACTIVATION": " سيتم <b> إرسال بريد إلكتروني </b>للتفعيل إلى عنوان البريد الإلكتروني الذي قدمته "
+  },
+  "PASSWORD": {
+    "N-MOT-PASSE": "كلمة مرور جديدة",
+    "ENTRER-MOT-DE-PASSE": "أدخل كلمة مرور جديدة",
+    "LABEL-CONFIRAMATION": "تأكيد",
+    "MATCH-PASSWORD": "يجب أن تتطابق كلمات المرور",
+    "BUTTON-ENREGISTRER": "سجل"
+  },
+  "CONNEXION": {
+    "VOUS-N-PAS-COMPTE": "ليس لديك حساب بعد",
+    "S-INSCRIRE": "تسجيل",
+    "CONNECION": "الإتصال",
+    "SUB-TITLE": "أدخل البريد الإلكتروني للتعريف الخاص بك",
+    "LABEL-EMAIL": "البريد الإلكتروني",
+    "LABEL-MOT-DE-PASSE": " كلمة المرور ",
+    "BUTTON-SE-CONNECTER": "يتصل",
+    "INSCRIT-SUCCES": "تهانينا لقد تم تسجيلك",
+    "URL-NON-VALIDE": "الرابط غير صحيح",
+    "REQUIRED": {
+      "EMAIL": "أدخل بريدك الإلكتروني",
+      "MOT-DE-PASSE": "أدخل كلمة المرور"
+    }
+  },
+  "BACK-END-ERROR": {
+    "EMAIL-EXSIST": "عنوان البريد الإلكتروني موجود بالفعل",
+    "PASSWORD-INCORECT": "كلمة سر خاطئة",
+    "EMAIL-INCORECT": "عنوان البريد الألكتروني غير صحيح"
+  }
+}
