@@ -27,40 +27,42 @@ export default function User() {
   };
   return (
     <>
-
-      <>
-        <div className="container-fluid no-gutters p-0 h-100">
-          <div className="row no-gutters p-0 row-right-side">
-            <div className="col-lg-7 no-gutters right-side">
-              <div className="custom-main-image">
-                <img className="custom-logo" src={logo} alt="Logo" />
+      {isLogin() ? (
+        <Redirect from="/" to="/admin/dashboard" />
+      ) : (
+        <>
+          <div className="container-fluid no-gutters p-0 h-100">
+            <div className="row no-gutters p-0 row-right-side">
+              <div className="col-lg-7 no-gutters right-side">
+                <div className="custom-main-image">
+                  <img className="custom-logo" src={logo} alt="Logo" />
+                </div>
               </div>
-            </div>
 
-            <div className="col-lg-5 no-gutters left-side">
-              <div className="container-fluid p-0 container-right-side">
-                <div className="row no-gutters p-0 row-right-side">
-                  <div className="col-lg-10 offset-lg-1 h-100 left-col-side">
-                    <div className="conten">
-                      <Switch>
-                        <Route exact path="/" component={Connexion} />
-                        <Route path="/register" component={Identification} />
-                        <Route path="/login" component={Connexion} />
-                        <Route path="/welcome" component={Welcome} />
-                        <Route path="/password/:id" component={PassWord} />
-                      </Switch>
+              <div className="col-lg-5 no-gutters left-side">
+                <div className="container-fluid p-0 container-right-side">
+                  <div className="row no-gutters p-0 row-right-side">
+                    <div className="col-lg-10 offset-lg-1 h-100 left-col-side">
+                      <div className="conten">
+                        <Switch>
+                          <Route exact path="/" component={Connexion} />
+                          <Route path="/register" component={Identification} />
+                          <Route path="/login" component={Connexion} />
+                          <Route path="/welcome" component={Welcome} />
+                          <Route path="/password/:id" component={PassWord} />
+                        </Switch>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-lg-10 offset-lg-1 mr-0 translate">
-                    <Translate />
+                    <div className="col-lg-10 offset-lg-1 mr-0 translate">
+                      <Translate />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </>
-
+        </>
+      )}
     </>
   );
 }

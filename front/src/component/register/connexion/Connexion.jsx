@@ -63,74 +63,80 @@ const Connexion = ({ history }) => {
 
   return (
     <>
-      <div className="header-connexion-wrapper" style={{ marginTop: "40px" }}>
-        <span className="header-connexion ">
-          {t("CONNEXION.VOUS-N-PAS-COMPTE")}
-        </span>
+      {iselogin ? (
+        <Redirect to="/admin/dashboard" />
+      ) : (
+        <>
+          <div className="header-connexion-wrapper">
+            <span className="header-connexion ">
+              {t("CONNEXION.VOUS-N-PAS-COMPTE")}
+            </span>
 
-        <Link
-          className="nav-link-connect text-decoration-none"
-          to="/register"
-        >
-          {t("CONNEXION.S-INSCRIRE")}
-        </Link>
-      </div>
-
-      <div className="custom-title">
-        <p className="main-title">{t("CONNEXION.CONNECION")}</p>
-        <p className="sub-title">{t("CONNEXION.SUB-TITLE")}</p>
-        <hr className="custom-bar-cnx" />
-      </div>
-
-      <form onSubmit={handleSubmit(onSubmit)} className="custom-form">
-        {/* email */}
-        <div className="form-group">
-          <label className="custom-label">
-            {t("CONNEXION.LABEL-EMAIL")}
-          </label>
-
-          <input
-            id="email"
-            name="email"
-            type="text"
-            placeholder={t("CONNEXION.LABEL-EMAIL")}
-            {...register("email")}
-            className={`form-control ${errors.email ? "is-invalid" : ""}`}
-          />
-          <div className="invalid-feedback">
-            {<Icon />}
-            {errors.email?.message}
+            <Link
+              className="nav-link-connect text-decoration-none"
+              to="/register"
+            >
+              {t("CONNEXION.S-INSCRIRE")}
+            </Link>
           </div>
-        </div>
-        {/* mot de passe" */}
-        <div className="form-group">
-          <label className="custom-label">
-            {t("CONNEXION.LABEL-MOT-DE-PASSE")}
-          </label>
-          <input
-            id="password"
-            name="password"
-            type="password"
-            placeholder={t("CONNEXION.LABEL-MOT-DE-PASSE")}
-            {...register("password")}
-            className={`form-control ${errors.password ? "is-invalid" : ""
-              }`}
-          />
-          <div className="invalid-feedback">
-            {<Icon />}
-            {errors.password?.message}
-          </div>
-        </div>
 
-        <button
-          type="submit"
-          className="btn btn-primary btn-lg btn-block button-lg"
-        >
-          {t("CONNEXION.BUTTON-SE-CONNECTER")}
-        </button>
-      </form>
+          <div className="custom-title">
+            <p className="main-title">{t("CONNEXION.CONNECION")}</p>
+            <p className="sub-title">{t("CONNEXION.SUB-TITLE")}</p>
+            <hr className="custom-bar-cnx" />
+          </div>
+
+          <form onSubmit={handleSubmit(onSubmit)} className="custom-form">
+            {/* email */}
+            <div className="form-group">
+              <label className="custom-label">
+                {t("CONNEXION.LABEL-EMAIL")}
+              </label>
+
+              <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder={t("CONNEXION.LABEL-EMAIL")}
+                {...register("email")}
+                className={`form-control ${errors.email ? "is-invalid" : ""}`}
+              />
+              <div className="invalid-feedback">
+                {<Icon />}
+                {errors.email?.message}
+              </div>
+            </div>
+            {/* mot de passe" */}
+            <div className="form-group">
+              <label className="custom-label">
+                {t("CONNEXION.LABEL-MOT-DE-PASSE")}
+              </label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder={t("CONNEXION.LABEL-MOT-DE-PASSE")}
+                {...register("password")}
+                className={`form-control ${
+                  errors.password ? "is-invalid" : ""
+                }`}
+              />
+              <div className="invalid-feedback">
+                {<Icon />}
+                {errors.password?.message}
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              className="btn btn-primary btn-lg btn-block button-lg"
+            >
+              {t("CONNEXION.BUTTON-SE-CONNECTER")}
+            </button>
+          </form>
+        </>
+      )}
     </>
-
   );
 };
 

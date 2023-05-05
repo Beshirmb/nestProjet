@@ -11,21 +11,22 @@ import {
 } from "../constants/UserConstant";
 
 import { signUp, signIn, updatepassword } from "../../api/index.js";
+import { getuserconnected } from "../../api/profilapi";
 
-export const loginU = (dataO, id) => async (dispatch) => {
+export const loginU = (dataO,id) => async (dispatch) => {
   try {
     dispatch({ type: USER_LOGIN_REQUEST });
     signIn(dataO)
-
+   
       .then((res) => {
         dispatch({ type: USER_LOGIN_SUCCESS, payload: res.data });
-
+       
         if (res.data && res.data.token) {
-          localStorage.setItem("jwt", res.data.token);
+          localStorage.setItem("jwt", res.data.token); 
         }
       })
 
-
+      
       .catch((err) => console.log(err));
   } catch (error) {
     dispatch({

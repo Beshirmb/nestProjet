@@ -1,0 +1,257 @@
+@import "../base/variables";
+@import "../base/fonts";
+
+.main-user {
+  padding-top: 24px;
+  padding-left: 70px;
+  padding-right: 70px;
+  overflow: auto;
+  height: 100%;
+
+  .group-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .button-prev-organisation {
+      background-color: $white2;
+      border: none;
+      border-radius: 10px;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      text-align: center;
+      align-items: center;
+      margin-right: 0;
+
+      .icon-arrow {
+        color: $gray-dark-primary;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+    }
+
+    .title-organisation {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #182241;
+      margin: 0 20px;
+    }
+  }
+
+  .custom-shadow {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 642px;
+    height: 380px;
+    border: 1px solid $white2;
+    box-shadow: 0px 4px 16px $blue3 !important;
+    border-radius: 5px !important;
+
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+
+    .image-user {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .custom-bar {
+      margin-top: 0;
+      margin-right: 30px;
+      width: 540px;
+      border-top: 1px solid $gray2;
+    }
+
+    .label-card {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      display: flex;
+      align-items: center;
+      color: $gray-dark-primary;
+      margin-bottom: 6px;
+    }
+
+    .text-card {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: $blue-dark-secondary;
+      margin-bottom: 6px;
+    }
+  }
+  .title-org {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $blue-dark;
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+  .custom-label-org {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    color: $blue-dark;
+  }
+
+  .icon-eye {
+    width: 20px;
+    height: 20px;
+    color: #b7bccb;
+    position: relative;
+    top: 44px;
+    left: 160px;
+    right: 180px;
+  }
+
+  .icon-eye2 {
+    width: 20px;
+    height: 20px;
+    color: #b7bccb;
+    position: relative;
+    top: 45px;
+    left: 63px;
+    right: 157px;
+  }
+
+  .custom-input-org {
+    font-size: 13px;
+  }
+
+  .group-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .icon-edit {
+    color: $blue;
+    cursor: pointer;
+  }
+
+  .icon-delete {
+    color: $red;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-user {
+    height: 100%;
+    width: 100%;
+    padding-top: 4px;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .title-org {
+      margin-top: 10px;
+    }
+
+    .group-header {
+      position: relative;
+      right: 30px;
+      left: -5px;
+      margin-left: 25px;
+      margin-top: 24px;
+
+      .title-organisation {
+        margin: 0 10px;
+      }
+    }
+
+    .custom-org {
+      top: 50px;
+      left: 124px;
+    }
+
+    .overlay {
+      display: none;
+    }
+
+    .custom-shadow {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      height: auto;
+      width: auto;
+      max-height: 100%;
+      max-width: 100%;
+
+      .row {
+        margin-bottom: 0;
+
+        .image-user {
+          margin-bottom: 25px;
+        }
+      }
+
+      .icon-edit {
+        position: absolute;
+        top: -137px;
+        right: 220px;
+        left: 206px;
+      }
+
+      .custom-bar {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+    .nav-menu {
+      width: 100%;
+    }
+  }
+}
+
+.change-pass-word {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+
+  .rounded-circle {
+    width: 132px;
+    height: 132px;
+  }
+
+  .labelfile {
+    cursor: pointer;
+    padding: 55px 55px;
+    border: 1px dashed $blue;
+    box-sizing: border-box;
+    color: $blue;
+    background: $white2;
+    border-radius: 50%;
+    width: 132px;
+    height: 132px;
+  }
+}
