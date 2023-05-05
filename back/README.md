@@ -1,4 +1,5 @@
-
+Projet GESTION DE STOCKS
+Createurs : [Bechir MBARKI  /  Rania LAZREG]
 
 ## Description
 
@@ -44,4 +45,4 @@ $ npm run test:cov
 
 ## Stay in touch
 
-- Author - [Bechir Mbarki  , rania lazreg]
+
