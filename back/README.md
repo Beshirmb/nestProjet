@@ -3,7 +3,7 @@ Createurs : [Bechir MBARKI  /  Rania LAZREG]
 
 ## Description
 
-[nestJs] projet bakend .
+[Projet GESTION DE STOCKS]  backend .
 
 ## Installation
 
