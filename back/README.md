@@ -44,4 +44,4 @@ $ npm run test:cov
 
 ## Stay in touch
 
-- Author - BeshirMbarki
+- Author - [Bechir Mbarki  , rania lazreg]
