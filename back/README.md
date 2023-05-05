@@ -2,8 +2,8 @@ Projet GESTION DE STOCKS
 Createurs : [Bechir MBARKI  /  Rania LAZREG]
 
 ## Description
-
-[Projet GESTION DE STOCKS]  backend .
+Partie Backend 
+[Projet GESTION DE STOCKS]  .
 
 ## Installation
 
